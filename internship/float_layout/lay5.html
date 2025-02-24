@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #header, #footer {
+            background: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+        #container {
+            background: lightgray;
+            padding: 20px;
+            overflow: hidden;
+        }
+        #div-1 {
+            width: 30%;
+            background: salmon;
+            padding: 20px;
+            float: left;
+        }
+        #div-2 {
+            width: 100%;
+            background: lightgreen;
+            padding: 20px;
+            float: left;
+            margin-top: 10px;
+        }
+        #div-4 {
+            width: 70%;
+            background: lightyellow;
+            padding: 20px;
+            float: left;
+            margin-top: 10px;
+        }
+        #div-3 {
+            width: 30%;
+            background: pink;
+            padding: 20px;
+            float: right;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">id="header"</div>
+    <div id="container">
+        <div id="div-1">id="div-1"<br>This is a sample paragraph.</div>
+        <div id="div-2">id="div-2"<br>This is a sample paragraph.</div>
+        <div id="div-4">id="div-4"<br>This is a sample paragraph.</div>
+        <div id="div-3">id="div-3"<br>This is a sample paragraph.</div>
+    </div>
+    <div id="footer">id="footer"</div>
+</body>
+</html>

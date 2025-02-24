@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exact Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #header, #footer {
+            background-color: #66b3ff;
+            padding: 20px;
+            clear: both;
+        }
+        #container {
+            background-color: #d3d3d3;
+            padding: 10px;
+            overflow: hidden;
+        }
+        #div-1 {
+            background-color: #ff9966;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        #div-2 {
+            background-color: #66ff66;
+            padding: 10px;
+            width: 200px;
+            float: left; /* Moves it to the left */
+            margin-bottom: 10px;
+        }
+        #div-3 {
+            background-color: #ff9999;
+            padding: 20px;
+            width: 100%;
+            clear: both;
+            margin-bottom: 10px;
+        }
+        #div-4 {
+            background-color: #ffffcc;
+            padding: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">id="header"</div>
+
+    <div id="container">
+        <div id="div-1">
+            id="div-1" <br>
+            This is a sample paragraph.
+        </div>
+        <div id="div-2">
+            id="div-2" <br>
+            This is a sample paragraph.
+        </div>
+        <div id="div-3">
+            id="div-3" <br>
+            This is a sample paragraph.
+        </div>
+        <div id="div-4">
+            id="div-4" <br>
+            This is a sample paragraph.
+        </div>
+    </div>
+
+    <div id="footer">id="footer"</div>
+
+</body>
+</html>
