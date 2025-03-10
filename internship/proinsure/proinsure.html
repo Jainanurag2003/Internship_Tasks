@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth; 
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #2c2543;
+            color: white;
+            padding: 100px 50px;
+            margin-top: 80px;
+        }
+        .hero-text {
+            max-width: 50%;
+        }
+        .hero img {
+            width: 40%;
+            border-radius: 10px;
+        }
+        .hero h2 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+        }
+        .about h2 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .about img {
+            width: 40%;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+        .features {
+            padding: 50px;
+        }
+        .features-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #29233b;
+            position: relative;
+            margin-bottom: 30px;
+            text-align: left; 
+            border-bottom: 2px solid #29233b;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .features-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+        }
+        .feature {
+            width: 30%;
+            text-align: left; 
+        }
+        .dot {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #87a2de;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .button-primary, .button-secondary, .button-third {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: transparent;
+            border: 2px solid white;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+            text-align: center;
+        }
+        .button-primary {
+            color: white;
+        }
+        .button-secondary {
+            color: white;
+        }
+        .button-third {
+            color: gray;
+            border: 2px solid grey;
+        }
+        .button-primary:hover, .button-secondary:hover, .button-third:hover {
+            opacity: 0.8;
+        }
+        .section {
+            text-align: center;
+            padding: 50px;
+            background-color: #29233b;
+            color: white;
+        }
+        .contact {
+            padding: 20px;
+            background-color: #29233b;
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 36px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .contact p {
+            font-size: 18px;
+            color: white;
+            margin: 10px 0;
+        }
+        .contact a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #29233b;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .hero, .features, .about {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-text, .hero img, .about img, .feature {
+                max-width: 100%;
+            }
+            .about img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Proinsure</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#plans">View Plans</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h2>Humanizing Your Insurance</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur explicabo temporibus alias magni distinctio sunt unde architecto ipsum dicta, praesentium amet est dolore.</p>
+            <a href="#plans" class="button-primary">View Plans</a>
+        </div>
+        <img src="01.png" alt="Hero Image">
+    </section>
+
+    <section id="about" class="about">
+        <img src="02.png" alt="About Image">
+        <div>
+            <h2>About the Insure</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur explicabo temporibus alias magni distinctio sunt unde architecto ipsum dicta, praesentium amet est dolore.</p>
+            <a href="#features" class="button-third">Know More</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2 class="features-title">We are different</h2>
+        <div class="features-container">
+            <div class="feature">
+                <div class="dot"></div>
+                <h3>Easy Process</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae et provident commodi atque fugiat sequi ex unde dolores.</p>
+            </div>
+            <div class="feature">
+                <div class="dot"></div>
+                <h3>Affordable Price</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae et provident commodi atque fugiat sequi ex unde dolores.</p>
+            </div>
+            <div class="feature">
+                <div class="dot"></div>
+                <h3>You Come First</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae et provident commodi atque fugiat sequi ex unde dolores.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans" class="section">
+        <h2>Find out more about how we work</h2>
+        <a href="#contact" class="button-secondary">HOW WE WORK</a>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:info@proinsure.com">info@proinsure.com</a></p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>Address: 123 Insurance St, New York, NY 10001</p>
+    </section>
+    <footer id="contact">
+        &copy; AltCampus Services Pvt Ltd, 2018-present
+    </footer>
+</body>
+</html>
+
